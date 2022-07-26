@@ -4,6 +4,7 @@ int main()
     int n,a;
     int c=0;
     scanf("%d",&n);
+    int p=n;
     while(n!=0){
         n=n/10;
         c=c+1;
@@ -12,7 +13,7 @@ int main()
         printf("Not a Trendy Number");
     }
     else{
-    a=(n/10)%10 ;  //middle number
+    a=(p/10)%10 ;  //middle number
        if(a%3==0){
             printf("Trendy Number");
        }
